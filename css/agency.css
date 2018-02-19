@@ -9,10 +9,12 @@ p {
 
 a {
   color: #fed136;
+  font-family: 'Josefin+Sans';
 }
 
 a:hover {
   color: #fec503;
+}
 }
 
 .text-primary {
@@ -26,7 +28,7 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Josefin Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 section {
@@ -167,7 +169,7 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/header-bg.jpg");
+  background-image: url("../img/cover-pic.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -179,7 +181,7 @@ header.masthead {
 
 header.masthead .intro-text {
   padding-top: 150px;
-  padding-bottom: 100px;
+  padding-bottom: 10px;
 }
 
 header.masthead .intro-text .intro-lead-in {
@@ -187,7 +189,7 @@ header.masthead .intro-text .intro-lead-in {
   font-style: italic;
   line-height: 22px;
   margin-bottom: 25px;
-  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 header.masthead .intro-text .intro-heading {
@@ -691,4 +693,203 @@ ul.social-buttons li a {
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #fed136;
+}
+
+/* -------------------------------- */
+
+
+/* The sticky */
+.sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  width: 580px;
+  min-height:50px;
+  height: auto;
+  background: #fff;
+  margin: 0 auto;
+  top: 30px;
+  box-shadow: 0 0 5px 2px #333;
+  z-index: 300;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  padding-top: 75px;
+  background: #ccc;
+  text-align: center;
+  color: #FFF;
+  font-size: 3em;
+}
+
+html,body {
+  margin: 0;
+  height: 100%;
+  text-align: center;
+  font-family: 'Ubuntu';
+}
+.frame{
+  width: 600px;
+  height: 350px;
+  margin: 250px auto 0;
+  position: relative;
+  background: #435d77;
+  border-radius:0 0 40px 40px; 
+}
+#button_open_envelope{
+  visibility: hidden;
+  width: 180px;
+  height: 30px;
+  position: absolute;
+  z-index: 311;
+  top: 250px;
+  left: 208px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 26px;
+  padding:15px 0; 
+  border: 2px solid #fff;
+  transition:.3s;
+}
+
+.left,.right,.top{width: 0; height: 0;position:absolute;top:0;}
+.left{  
+  border-left: 300px solid #337efc;
+  border-top: 160px solid transparent;
+  border-bottom: 160px solid transparent;
+  z-index: 310;
+}
+.right{ 
+  border-right: 300px solid #337efc;
+  border-top: 160px solid transparent;
+  border-bottom: 160px solid transparent;;
+  left:300px;
+  z-index: 310;
+}
+.top{ 
+  border-right: 300px solid transparent;
+  border-top: 200px solid #03A9F4;
+  border-left: 300px solid transparent;
+  transition:transform 1s,border 1s, ease-in-out;
+  transform-origin:top;
+  transform:rotateX(0deg);
+  z-index: 500;
+}
+.bottom{
+  width: 600px;
+  height: 190px;
+  position: absolute;
+  background: #2b67cb;
+  top: 160px;
+  border-radius:0 0 30px 30px;
+  z-index: 310; 
+}
+
+.open{
+  transform-origin:top;
+  transform:rotateX(180deg);
+  transition:transform .7s,border .7s,z-index .7s ease-in-out;
+  border-top: 200px solid #2c3e50;
+  z-index: 200;
+}
+.pull{
+  -webkit-animation:message_animation 2s 1 ease-in-out;
+  animation:message_animation 2s 1 ease-in-out;
+  -webkit-animation-delay:.9s;
+  animation-delay:.45s;
+  transition:1.5s;
+  transition-delay:1s;
+  z-index: 350;
+}
+
+@-webkit-keyframes message_animation {
+  0%{
+    transform:translatey(0px);
+    z-index: 300;
+    transition: 1s ease-in-out;
+  }
+  50%{
+    transform:translatey(-340px);
+    z-index: 300;
+    transition: 1s ease-in-out;
+  }
+  51%{
+    transform:translatey(-340px);
+    z-index: 350;
+    transition: 1s ease-in-out;
+  }
+  100%{
+    transform:translatey(0px);
+    z-index: 350;
+    transition: 1s ease-in-out;
+  }
+}
+@keyframes message_animation {
+  0%{
+    transform:translatey(0px);
+    z-index: 300;
+    transition: 1s ease-in-out;
+  }
+  50%{
+    transform:translatey(-340px);
+    z-index: 300;
+    transition: 1s ease-in-out;
+  }
+  51%{
+    transform:translatey(-340px);
+    z-index: 350;
+    transition: 1s ease-in-out;
+  }
+  100%{
+    transform:translatey(0px);
+    z-index: 350;
+    transition: 1s ease-in-out;
+  }
+}
+
+
+
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+/*html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  background-color: #F5F7FA;
+  line-height: 1.2;
+}*/
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
 }
