@@ -238,6 +238,13 @@ header.masthead .intro-text .intro-heading {
   font-style: italic;
 }
 
+.project-title{
+  font-family: 'Josefin Sans';
+  font-size: 30px;
+  color: #fec503;
+  font-weight: bold;
+}
+
 .service-heading {
   margin: 15px 0;
   text-transform: none;
@@ -246,15 +253,20 @@ header.masthead .intro-text .intro-heading {
 
 #portfolio .portfolio-item {
   right: 0;
-  margin: 0 0 15px;
+  margin: 0 0 0px;
 }
 
 #portfolio .portfolio-item .portfolio-link {
   position: relative;
   display: block;
-  max-width: 400px;
+  max-width: 200px;
   margin: 0 auto;
   cursor: pointer;
+}
+
+img {
+    max-width: 300px;
+    max-height: 200px;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
@@ -878,4 +890,19 @@ html,body {
  */
 .cf {
     *zoom: 1;
+}
+
+.verticalLine {
+  border-left: solid #fec503;
+  border-width: 5px;
+}
+
+.col-right {
+  padding-right: 15px !important;
+  margin-left: -15px !important;
+}
+
+.col-left {
+  padding-left: 15px !important;
+  margin-right: -15px !important;
 }
