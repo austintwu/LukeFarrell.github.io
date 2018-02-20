@@ -56,8 +56,8 @@ $(window).scroll(function() {
 
 $(window).scroll(function(){
   var windowTopPos = $(window).scrollTop();
-  var buttonPos = $('#button_open_envelope0').offset().top;
   var start_trigger = $('#start_trigger').offset().top + 350;
+  var buttonPos = $('#button_open_envelope0').offset().top;
   var navBottomPos = $('#sidebar0').offset().top + $('#sidebar0').outerHeight();
 
 
