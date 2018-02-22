@@ -21,7 +21,6 @@ $( "img" ).on( "mouseover", function() {
       $( this ).css( "filter", "none" );
 });
 
-
 var open0=false
 
 $(document).ready(function(){

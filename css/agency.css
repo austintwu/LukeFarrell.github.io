@@ -26,7 +26,7 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+{
   font-weight: 700;
   font-family: 'Josefin Sans';
   padding-bottom: 10px;
@@ -100,8 +100,11 @@ img::-moz-selection {
   background: transparent;
 }
 
+
 #mainNav {
   background-color: #212529;
+  border-radius: 0px !important;
+  font-size: 15.5px !important;
 }
 
 #mainNav .navbar-toggler {
@@ -125,7 +128,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-size: 90%;
+  font-size: 85%;
   font-weight: 400;
   padding: 0.75em 0;
   letter-spacing: 1px;
@@ -763,7 +766,6 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
   filter: gray; /* IE6-9 */
   -webkit-filter: sepia(100%); /* Chrome 19+ & Safari 6+ */
-
 }
 
 }
@@ -772,8 +774,6 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   -webkit-filter: grayscale(0%);
 }
 
-
-
 @media (max-width: 1500px) {
   #photos {
   -moz-column-count:    3;
@@ -781,7 +781,13 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   column-count:         3;
   }
 }
-
+@media (max-width: 400px) {
+  #photos {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
 /*THE FUCKIN ENVELOPE*/
 
 .column {
@@ -1448,15 +1454,34 @@ html,body {
 .carousel{
     background: #2f4357;
     margin-top: 20px;
+
 }
 .carousel .item{
-    min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+    min-height: 280px;  /*Prevent carousel from being distorted if for some reason image doesn't load */
+    max-height: 300px;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%,0);
+    /*max-width: 200px;*/
 }
 .carousel .item img{
     margin: 0 auto; /* Align slide image horizontally center */
+    align-items: center;
 }
 .bs-example{
   margin: 20px;
+}
+
+.carousel-caption{
+  font-style: italic;
+  color: #505050 !important;
+}
+h6 {
+  background: #fec503;
+  display:inline !important;
+  font-size: 25px !important;
+  line-height: 200%;
+  align-content: center !important;
 }
 /**
  * For IE 6/7 only
@@ -1479,4 +1504,8 @@ html,body {
 .col-left {
   padding-left: 15px !important;
   margin-right: -15px !important;
+}
+
+.MagicScroll[data-mode="cover-flow"] {
+    background-color: white;
 }
