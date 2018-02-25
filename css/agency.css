@@ -814,8 +814,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 /* The sticky */
 .sidebar0 {
-  visibility: hidden;
-  position: fixed;
+  position: relative;
   left: 20%;
   bottom: 30%;
   transform: translate(-20%, 0);
@@ -836,20 +835,20 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 
 html,body {
-  margin: 0;
+  margin
   height: 100%;
   text-align: center;
   font-family: 'Ubuntu';
 }
 .frame0{
-  width: 200px;
-  height: 116px;
+  width: 210px;
+  height: 116 px;
   margin: 250px auto 0;
   position: relative;
   background: #7190af;
   border-radius:0 0 40px 40px; 
-  left: -26%;
-  top:47%;
+/*  left: -26%;
+  top:48%;*/
 }
 #button_open_envelope0{
   visibility: hidden;
@@ -871,29 +870,29 @@ html,body {
 .left0{ 
     /*left: 20%;*/
   /*transform: translate(-20%, 0);*/
-  border-left: 100px solid #fcf6e7;
+  border-left: 110px solid #fcf6e7;
   border-top: 53px solid transparent;
-  border-bottom: 53px solid transparent;
+  border-bottom: 45px solid transparent;
   z-index: 310;
 }
 .right0{ 
-  border-right: 100px solid #fcf6e7;
+  border-right: 110px solid #fcf6e7;
   border-top: 53px solid transparent;
-  border-bottom: 53px solid transparent;;
+  border-bottom: 45px solid transparent;;
   left:100px;
   z-index: 310;
 }
 .top0{ 
-  border-right: 100px solid transparent;
+  border-right: 105px solid transparent;
   border-top: 66px solid #ffefd5;
-  border-left: 100px solid transparent;
+  border-left: 105px solid transparent;
   transition:transform .75s,border .75s, ease-in-out .75s;
   transform-origin:top;
   transform:rotateX(0deg);
   z-index: 500;
 }
 .bottom0{
-  width: 200px;
+  width: 210px;
   height: 63px;
   position: absolute;
   background: #f8ecce;
@@ -931,14 +930,11 @@ html,body {
 
 /* The sticky */
 .sidebar1 {
-/*  position: -webkit-sticky;
-  position: sticky;
-  bottom: 0;*/
-  visibility: hidden;
-  position: fixed;
-  left: 50%;
+
+  position: relative;
+  left: 20%;
   bottom: 30%;
-  transform: translate(-50%, 0);
+  transform: translate(-20%, 0);
   width: 190px;
   min-height:50px;
   height: auto;
@@ -969,7 +965,7 @@ html,body {
   border-radius:0 0 40px 40px; 
 
 }
-#button_open_envelope0{
+#button_open_envelope1{
   visibility: hidden;
   width: 60px;
   height: 30px;
@@ -986,30 +982,32 @@ html,body {
 }
 
 .left1,.right1,.top1{width: 0; height: 0;position:absolute;top:0;}
-.left1{  
-  border-left: 100px solid #fcf6e7;
+.left1{ 
+    /*left: 20%;*/
+  /*transform: translate(-20%, 0);*/
+  border-left: 110px solid #fcf6e7;
   border-top: 53px solid transparent;
-  border-bottom: 53px solid transparent;
+  border-bottom: 45px solid transparent;
   z-index: 310;
 }
 .right1{ 
-  border-right: 100px solid #fcf6e7;
+  border-right: 110px solid #fcf6e7;
   border-top: 53px solid transparent;
-  border-bottom: 53px solid transparent;;
+  border-bottom: 45px solid transparent;;
   left:100px;
   z-index: 310;
 }
 .top1{ 
-  border-right: 100px solid transparent;
+  border-right: 105px solid transparent;
   border-top: 66px solid #ffefd5;
-  border-left: 100px solid transparent;
+  border-left: 105px solid transparent;
   transition:transform .75s,border .75s, ease-in-out .75s;
   transform-origin:top;
   transform:rotateX(0deg);
   z-index: 500;
 }
 .bottom1{
-  width: 200px;
+  width: 210px;
   height: 63px;
   position: absolute;
   background: #f8ecce;
@@ -1029,15 +1027,11 @@ html,body {
 }
 
 /* The sticky */
-.sidebar2 {
-/*  position: -webkit-sticky;
-  position: sticky;
-  bottom: 0;*/
-  visibility: hidden;
-  position: fixed;
-  left: 80%;
+.sidebar2 { 
+  position: relative;
+/*  left: 20%;
   bottom: 30%;
-  transform: translate(-80%, 0);
+  transform: translate(-30%, 0);*/
   width: 190px;
   min-height:50px;
   height: auto;
@@ -1066,8 +1060,8 @@ html,body {
   position: relative;
   background: #7190af;
   border-radius:0 0 40px 40px; 
-  left: 26%;
-  top:-47%;
+/*  left: 26%;
+  top:-48%;*/
 
 
 }
@@ -1088,30 +1082,32 @@ html,body {
 }
 
 .left2,.right2,.top2{width: 0; height: 0;position:absolute;top:0;}
-.left2{  
-  border-left: 100px solid #fcf6e7;
+.left2{ 
+    /*left: 20%;*/
+  /*transform: translate(-20%, 0);*/
+  border-left: 110px solid #fcf6e7;
   border-top: 53px solid transparent;
-  border-bottom: 53px solid transparent;
+  border-bottom: 45px solid transparent;
   z-index: 310;
 }
 .right2{ 
-  border-right: 100px solid #fcf6e7;
+  border-right: 110px solid #fcf6e7;
   border-top: 53px solid transparent;
-  border-bottom: 53px solid transparent;;
+  border-bottom: 45px solid transparent;;
   left:100px;
   z-index: 310;
 }
 .top2{ 
-  border-right: 100px solid transparent;
+  border-right: 105px solid transparent;
   border-top: 66px solid #ffefd5;
-  border-left: 100px solid transparent;
+  border-left: 105px solid transparent;
   transition:transform .75s,border .75s, ease-in-out .75s;
   transform-origin:top;
   transform:rotateX(0deg);
   z-index: 500;
 }
 .bottom2{
-  width: 200px;
+  width: 210px;
   height: 63px;
   position: absolute;
   background: #f8ecce;
@@ -1129,7 +1125,6 @@ html,body {
 
   z-index: 200;
 }
-
 
 
 
