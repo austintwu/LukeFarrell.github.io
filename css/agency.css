@@ -1546,3 +1546,9 @@ h6 {
   border: 1px solid #ddd;
   border-radius: .25em;
 }
+
+.ImageBorder
+{
+    border-width: 1px;
+    border-color: Black;
+}
