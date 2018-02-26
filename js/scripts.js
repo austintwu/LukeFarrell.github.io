@@ -17,6 +17,9 @@ allImages += '<img src="./img/friends/10.jpg" alt="pal">';
 allImages += '<img src="./img/friends/11.jpg" alt="pal">';
 allImages += '<img src="./img/friends/12.jpg" alt="pal">';
 allImages += '<img src="./img/friends/13.jpg" alt="pal">';
+allImages += '<img src="./img/friends/14.jpg" alt="pal">';
+allImages += '<img src="./img/friends/15.jpg" alt="pal">';
+allImages += '<img src="./img/friends/16.jpg" alt="pal">';
 // Add more photos to the collage here
 
 $('#photos').append(allImages);
